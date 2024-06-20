@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2eae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@media screen and (min-width: 401px) {
+  .card {
+    display: flex;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 600px;
+    max-width: 600px;
+    height: 450px;
+    max-height: 450px;
+  }
+
+  .card-image-mobile {
+    display: none;
+  }
+
+  .card-image img {
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .card-content {
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .category {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+    color: #6c7289;
+  }
+
+  h1 {
+    font-family: "Fraunces", sans-serif;
+    color: #1c232b;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0;
+    max-width: 10ch;
+  }
+
+  .description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    color: #6c7289;
+    max-width: 24ch;
+    font-weight: 500;
+    line-height: 1.7;
+    padding-bottom: 6px;
+  }
+
+  .price {
+    font-family: "Fraunces", sans-serif;
+    font-size: 2rem;
+    color: #3d8168;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    color: #6c7289;
+    font-size: 0.8125rem;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+
+  .add-to-cart {
+    font-family: "Montserrat", sans-serif;
+    background-color: #3d8168;
+    color: #fff;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    font-weight: 700;
+    width: 237px;
+    max-width: 237px;
+  }
+
+  .fa-cart-shopping {
+    padding-inline-end: 0.5rem;
+  }
+
+  .add-to-cart:hover {
+    background-color: #1a4032;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    border-radius: 10px;
+    background-color: #fff;
+    width: 343px;
+    max-width: 343px;
+    height: 611px;
+    max-height: 611px;
+  }
+
+  .card-image-mobile img {
+    display: block;
+    object-fit: cover;
+    width: 343.7px;
+    height: 240px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card-image {
+    display: none;
+  }
+
+  .card-content {
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    max-width: 450px;
+    height: 320px;
+    max-height: 611px;
+    gap: 0.9rem;
+  }
+
+  .category {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+    color: #6c7289;
+  }
+
+  h1 {
+    font-family: "Fraunces", sans-serif;
+    color: #1c232b;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0;
+    max-width: 15ch;
+  }
+
+  .description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    color: #6c7289;
+    max-width: 30ch;
+    font-weight: 500;
+    line-height: 1.7;
+    padding-bottom: 6px;
+  }
+
+  .price {
+    font-family: "Fraunces", sans-serif;
+    font-size: 2rem;
+    color: #3d8168;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    color: #6c7289;
+    font-size: 0.8125rem;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+
+  .add-to-cart {
+    font-family: "Montserrat", sans-serif;
+    background-color: #3d8168;
+    color: #fff;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    font-weight: 700;
+    width: 295px;
+    max-width: 295px;
+  }
+
+  .fa-cart-shopping {
+    padding-inline-end: 0.5rem;
+  }
+
+  .add-to-cart:hover {
+    background-color: #1a4032;
+  }
+}

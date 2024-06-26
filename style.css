@@ -72,6 +72,8 @@ body {
   }
 
   .price {
+    display: flex;
+    align-items: center;
     font-family: "Fraunces", sans-serif;
     font-size: 2rem;
     color: #3d8168;
@@ -171,6 +173,8 @@ body {
   }
 
   .price {
+    display: flex;
+    align-items: center;
     font-family: "Fraunces", sans-serif;
     font-size: 2rem;
     color: #3d8168;
